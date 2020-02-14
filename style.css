@@ -37,10 +37,6 @@ svg {
     text-transform: uppercase;
 }
 
-.axis:hover .axis-label{
-    font-weight: bold;
-}
-
 .axis:hover line,
 .axis:hover path,
 .axis.active line,
@@ -48,4 +44,31 @@ svg {
   fill: none;
   stroke: #222;
   stroke-width: 1px;
+}
+
+.axis:hover .axis-label {
+color: #fdec6e;
+  text-shadow:0px 0px 30px #fdec6e;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.axis:hover .tick text {
+  opacity: 1;
+}
+
+.axis.active .axis-label {
+    color: #fdec6e;
+  text-shadow:0px 0px 30px #fdec6e;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.axis.active .tick text {
+  opacity: 1;
+  font-weight: bold;
 }
