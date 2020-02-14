@@ -11,7 +11,7 @@ svg {
 
 .foreground path {
     fill: none;
-    stroke: steelblue;
+    stroke: violet;
 }
 
 .brush .extent {
@@ -34,6 +34,18 @@ svg {
 
 .axis .axis-label {
     font-size: 11px;
-    font-weight: bold;
     text-transform: uppercase;
+}
+
+.axis:hover .axis-label{
+    font-weight: bold;
+}
+
+.axis:hover line,
+.axis:hover path,
+.axis.active line,
+.axis.active path {
+  fill: none;
+  stroke: #222;
+  stroke-width: 1px;
 }
