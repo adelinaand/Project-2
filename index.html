@@ -2,58 +2,15 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<!--
-			
-			This gist is based on those three gists:
-			http://bl.ocks.org/mbostock/1341021
-			http://bl.ocks.org/jasondavies/1341281
-			http://bl.ocks.org/syntagmatic/4020926
 
-		-->
 		<title>Parallel Coordinates Ordinal Axis</title>
 		<style>
-			svg {
-				font: 10px sans-serif;
-			}
 
-			.background path {
-				fill: none;
-				stroke: #ddd;
-				shape-rendering: crispEdges;
-			}
-
-			.foreground path {
-				fill: none;
-				stroke: steelblue;
-			}
-
-			.brush .extent {
-				fill-opacity: .3;
-				stroke: #fff;
-				shape-rendering: crispEdges;
-			}
-
-			.axis line,
-			.axis path {
-				fill: none;
-				stroke: #000;
-				shape-rendering: crispEdges;
-			}
-
-			.axis text {
-				text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
-				cursor: move;
-			}
-
-			.axis .axis-label {
-				font-size: 11px;
-				font-weight: bold;
-				text-transform: uppercase;
-			}
 		</style>
 	</head>
 	<body>
-		<script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <link rel="stylesheet" href="style.css"></link>
 		<script>
 
 			var margin = {top: 50, right: 50, bottom: 50, left: 50},
