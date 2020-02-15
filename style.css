@@ -56,7 +56,7 @@ input {
 
 /* data table styles */
   #grid { height: 240px;
-          width: 1000px; }
+          width: 100%; }
   .row, .header { clear: left; font-size: 11px; line-height: 24px; height: 24px; }
   .row:nth-child(odd) { background: rgba(0,0,0,0.05); }
   .header { font-weight: bold; }
