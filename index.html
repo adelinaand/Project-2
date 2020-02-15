@@ -19,6 +19,11 @@
 
 			var dimensions = [
 				{
+					name: "Country",
+					scale: d3.scale.ordinal().range([0, height]),
+    				type: "String"
+				},
+				{
 					name: "Q1",
 					scale: d3.scale.linear().range([height, 0]),
     				type: "number"
