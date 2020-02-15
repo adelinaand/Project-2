@@ -21,7 +21,7 @@ ul {
 }
 #example {
   min-height: 300px;
-  margin: 12px 0;
+  margin: 20px 0;
 }
 p {
   width: 560px;
@@ -58,8 +58,8 @@ input {
   .row, .header { clear: left; font-size: 11px; line-height: 24px; height: 24px; }
   .row:nth-child(odd) { background: rgba(0,0,0,0.05); }
   .header { font-weight: bold; }
-  .cell { float: left; overflow: hidden; white-space: nowrap; width: 200px; height: 18px; }
-  .col-0 { width: 150px; }
+  .cell { float: left; overflow: hidden; white-space: nowrap; width: 220px; height: 18px; }
+  .col-0 { width: 180px; }
 
   
 /* parcoords styles */
