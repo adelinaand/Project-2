@@ -9,7 +9,8 @@
 		</style>
 	</head>
 	<body>
-    <script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="divgrid.js"></script>
     <link rel="stylesheet" href="style.css"></link>
 		<script>
 
@@ -197,6 +198,16 @@
 					}) ? null : "none";
 				});
 			}
+
+			<div id="grid"></div>
+
+			var grid = d3.divgrid();
+
+			d3.csv('data.csv', function(data) {
+			d3.select('#grid')
+				.datum(data)
+				.call(grid)
+			});
 		</script>
 	</body>
 </html>
