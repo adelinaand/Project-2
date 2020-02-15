@@ -81,6 +81,8 @@
 				.append("g")
 					.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+			var grid = d3.select("body").append("grid");		
+
 			d3.csv("data.csv", function(error, data) {
 
 				//Create the dimensions depending on attribute "type" (number|string)
@@ -198,8 +200,6 @@
 					}) ? null : "none";
 				});
 			}
-
-			<div id="grid"></div>
 
 			var grid = d3.divgrid();
 
