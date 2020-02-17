@@ -6,6 +6,15 @@ body {
   line-height: 1.45em;
   background-color: #D3D3D3;
 }
+h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+}
+
+h2{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
 a {
   color: #454545;
 }
