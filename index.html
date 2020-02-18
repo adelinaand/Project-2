@@ -8,9 +8,10 @@
 <script src="parcoords.js"></script>
 <script src="divgrid.js"></script>
 
-<h2>How </h2>
-<h1>JUSTIFIABLE</h1>
-<h2>does the world find the following things throughout the years?</h2>
+<h2> 
+  <span id="normal">What is </span><span id="bold">JUSTIFIABLE</span> <span id="normal">and what isn't?</span>
+</h2>
+<h3> Explore the world's opinions thoughout the years. </h3>
 <div class="topnav">
   <a class="active" href="#home">Home</a>
   <a href="test.html">Wave 3 1995-1998</a>
@@ -24,9 +25,9 @@
 
 <script id="brushing">// quantitative colour scale
 var green_to_blue = d3.scale.linear()
-  .domain([9, 50])
+  .domain([1, 30])
   .range(["#7AC143", "#00B0DD"])
-  .interpolate(d3.interpolateLab);
+  .interpolate(d3.interpolateHcl);
 
 var color = function(d) { return green_to_blue(d['Homosexuality']); };
 
@@ -44,7 +45,7 @@ d3.csv('data.csv', function(data) {
   // create data table, row hover highlighting
   var grid = d3.divgrid();
   d3.select("#grid")
-    .datum(data.slice(0,10))
+    //.datum(data.slice(0,10))
     .call(grid)
     .selectAll(".row")
     .on({
