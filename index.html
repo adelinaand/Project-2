@@ -45,7 +45,7 @@ d3.csv('data.csv', function(data) {
   // create data table, row hover highlighting
   var grid = d3.divgrid();
   d3.select("#grid")
-    //.datum(data.slice(0,10))
+    .datum(data.slice(0,31))
     .call(grid)
     .selectAll(".row")
     .on({
