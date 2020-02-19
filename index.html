@@ -26,7 +26,7 @@
 <script id="brushing">// quantitative colour scale
 var green_to_blue = d3.scale.linear()
   .domain([1, 30])
-  .range(["#7AC143", "#00B0DD"])
+  .range(["#5F9EA0", "#006400"])
   .interpolate(d3.interpolateHcl);
 
 var color = function(d) { return green_to_blue(d['Homosexuality']); };
@@ -56,7 +56,7 @@ d3.csv('data.csv', function(data) {
   // update data table on brush event
   parcoords.on("brush", function(d) {
     d3.select("#grid")
-      .datum(d.slice(0,10))
+      .datum(d.slice(0,31))
       .call(grid)
       .selectAll(".row")
       .on({
