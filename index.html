@@ -26,7 +26,7 @@
 <script id="brushing">// quantitative colour scale
 var green_to_blue = d3.scale.linear()
   .domain([1, 30])
-  .range(["#5F9EA0", "#006400"])
+  .range(["#F8F8FF", "#006400"])
   .interpolate(d3.interpolateHcl);
 
 var color = function(d) { return green_to_blue(d['Homosexuality']); };
