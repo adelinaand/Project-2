@@ -77,7 +77,7 @@ input {
   .row, .header { clear: left; font-size: 11px; line-height: 24px; height: 24px; }
   .row:nth-child(odd) { background: rgba(0,0,0,0.05); }
   .header { font-weight: bold; width: 5px;}
-  .cell { float: left; overflow: hidden; white-space: nowrap; width: 15%; height: 18px; }
+  .cell { float: left; overflow: hidden; white-space: nowrap; width: 160px; height: 18px; }
 
 
 /* parcoords styles */
