@@ -77,10 +77,11 @@ input {
   .row, .header { clear: left; font-size: 11px; line-height: 24px; height: 24px; }
   .row:nth-child(odd) { background: rgba(0,0,0,0.05); }
   .header { font-weight: bold; width: 5px;}
-  .cell { float: left; overflow: hidden; white-space: nowrap; width: 180px; height: 18px; }
-  .col-0 { width: 150px; }
+  .cell { float: left; overflow: hidden; white-space: nowrap; width: 10%; height: 18px; }
+  .col-0 { width: 15%}
+  .col-6 { width: 20%}
+  .col-7 { width: 20%}
 
-  
 /* parcoords styles */
 .parcoords > svg, .parcoords > canvas { 
   font: 11px "Source Code Pro", Consolas, monaco, monospace;
