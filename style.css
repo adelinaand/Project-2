@@ -76,7 +76,7 @@ input {
   #grid { width: 100%; }
   .row, .header { clear: left; font-size: 11px; line-height: 24px; height: 24px; }
   .row:nth-child(odd) { background: rgba(0,0,0,0.05); }
-  .header { font-weight: bold; }
+  .header { font-weight: bold; white-space:pre-wrap; word-wrap:break-word}
   .cell { float: left; overflow: hidden; white-space: nowrap; width: 180px; height: 18px; }
   .col-0 { width: 150px; }
 
@@ -137,7 +137,7 @@ input {
   margin: 0 auto;
 }
 
-.topnav a {
+.topnav b {
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -146,7 +146,7 @@ input {
   font-size: 17px;
 }
 
-.topnav a:hover {
+.topnav b:hover {
   background-color:seagreen;
   color: black;
 }
