@@ -13,11 +13,12 @@
 </h2>
 <h3> Explore the world's opinions thoughout the years. </h3>
 <div class="topnav">
-  <a class="active" href="#home">Home</a>
   <a href="test.html">Wave 3 1995-1998</a>
   <a href="index.html">Wave 4 1999-2004</a>
   <a href="test.html">Wave 5 2005-2009</a>
-  <li><a href="index.html">Wave 6 2010-2014</a>
+  <a href="index.html">Wave 6 2010-2014</a>
+  <a id="dropdown">?</a>
+  <div class="dropdown-content">Bla bla</div>
 </div>
 
 <div id="example" class="parcoords"></div>
@@ -26,7 +27,7 @@
 <script id="brushing">// quantitative colour scale
 var green_to_blue = d3.scale.linear()
   .domain([1, 30])
-  .range(["#5F9EA0", "#006400"])
+  .range(["#F8F8FF", "#006400"])
   .interpolate(d3.interpolateHcl);
 
 var color = function(d) { return green_to_blue(d['Homosexuality']); };

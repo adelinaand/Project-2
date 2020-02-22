@@ -133,6 +133,8 @@ input {
 .topnav {
   background-color: lightseagreen;
   overflow: hidden;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .topnav a {
@@ -149,7 +151,23 @@ input {
   color: black;
 }
 
-.topnav a.active {
+.dropdown {
   background-color: teal;
   color: white;
 }
+
+#dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#dropdown:hover .dropdown-content {display: block;}
