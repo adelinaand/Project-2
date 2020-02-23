@@ -124,7 +124,7 @@ input {
   transition: opacity 0.5s;
 }
 .parcoords canvas.faded {
-  opacity: 0.25;
+  opacity: 0,1;
 }
 .parcoords {
   -webkit-touch-callout: none;
