@@ -79,12 +79,13 @@ input {
 }
 
   #grid { width: fit-content;
+          width: -moz-max-content;
           margin-left: auto;
           margin-right: auto;
           margin-top: 420px }
   .row, .header { clear: left; font-size: 11px; line-height: 24px; height: 24px; }
   .row:nth-child(odd) { background: rgba(0,0,0,0.05); }
-  .header { font-weight: bold;}
+  .header { font-weight: bolder;}
   .cell { float: left; overflow: hidden; white-space: nowrap; width: 140px; height: 18px; }
 
 
@@ -139,6 +140,7 @@ input {
   background-color: lightseagreen;
   overflow: hidden;
   width: fit-content;
+  width: -moz-max-content;
   margin: 0 auto;
   border-radius: 6px;
   text-align: center;

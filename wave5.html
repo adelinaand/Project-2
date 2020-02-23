@@ -8,29 +8,46 @@
 <script src="parcoords.js"></script>
 <script src="divgrid.js"></script>
 
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="test.html">Wave 5</a>
-  <li><a href="index.html">Wave 6</a>
+<div class="dropdown">
+  <button class="dropbtn">?</button>
+  <div class="dropdown-content">
+    <a>This page takes you on a journey of how the world's view on what is justifiable and what is not
+      has changed throughout the years. The values shown are an average of the different countries' answers where 1  means 
+      "Can never be justified" and 10 means "Can always be justified". </a>
+  </div>
 </div>
 
+<h2> 
+  <span id="normal">What is </span><span id="bold">JUSTIFIABLE</span> <span id="normal">and what isn't?</span>
+</h2>
+<h3> Explore the world's opinions thoughout the years. </h3>
+<div class="topnav">
+  <a href="test.html">Wave 3 1995-1998</a>
+  <a href="index.html">Wave 4 1999-2004</a>
+  <a href="wave5.html">Wave 5 2005-2009</a>
+  <a href="index.html">Wave 6 2010-2014</a>
+  <a href="index.html">Discovery process</a>
+</div>
+
+<h3>2005-2009</h3>
+ 
 <div id="example" class="parcoords"></div>
 <div id="grid"></div>
 
 <script id="brushing">// quantitative colour scale
-var green_to_blue = d3.scale.linear()
-  .domain([9, 50])
-  .range(["#90EE90", "#00FFFF"])
-  .interpolate(d3.interpolateLab);
+  var green_to_blue = d3.scale.linear()
+    .domain([9, 50])
+    .range(["#7AC143", "#00B0DD"])
+    .interpolate(d3.interpolateLab);
 
-var color = function(d) { return green_to_blue(d['Homosexuality']); };
+//var color = function(d) { return green_to_blue(d['Homosexuality']); };
 
 var parcoords = d3.parcoords()("#example")
-  .color(color)
+  .color("#7AC143")
   .alpha(0.4);
 
 // load csv file and create the chart
-d3.csv('data.csv', function(data) {
+d3.csv('wave5.csv', function(data) {
   parcoords
     .data(data)
     .render()
@@ -39,7 +56,7 @@ d3.csv('data.csv', function(data) {
   // create data table, row hover highlighting
   var grid = d3.divgrid();
   d3.select("#grid")
-    .datum(data.slice(0,10))
+    .datum(data.slice(0,31))
     .call(grid)
     .selectAll(".row")
     .on({
@@ -50,7 +67,7 @@ d3.csv('data.csv', function(data) {
   // update data table on brush event
   parcoords.on("brush", function(d) {
     d3.select("#grid")
-      .datum(d.slice(0,10))
+      .datum(d.slice(0,31))
       .call(grid)
       .selectAll(".row")
       .on({
