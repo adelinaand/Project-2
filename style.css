@@ -41,7 +41,7 @@ ul {
 #example {
   min-height: 350px;
   margin: 20px 0;
-  width: 100%;
+  width: 80%;
 }
 p {
   width: 600px;
@@ -73,10 +73,10 @@ input {
   font-size: 16px;
 }
 
-  #grid { width: 100%; }
+  #grid { width: 80%; }
   .row, .header { clear: left; font-size: 11px; line-height: 24px; height: 24px; }
   .row:nth-child(odd) { background: rgba(0,0,0,0.05); }
-  .header { font-weight: bold; width: 5px;}
+  .header { font-weight: bold;}
   .cell { float: left; overflow: hidden; white-space: nowrap; width: 160px; height: 18px; }
 
 
