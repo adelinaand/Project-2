@@ -2,7 +2,7 @@ body {
   font-size: 14px;
   font-family: "Source Code Pro", Consolas, monaco, monospace;
   margin: 20px auto 20px;
-  width: 80%;
+  width: 100%;
   line-height: 1.45em;
   background-color: whitesmoke;
 }
@@ -132,9 +132,10 @@ input {
   overflow: hidden;
   width: fit-content;
   margin: 0 auto;
+  border-radius: 6px;
 }
 
-.topnav b {
+.topnav a {
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -143,17 +144,28 @@ input {
   font-size: 17px;
 }
 
-.topnav b:hover {
+.topnav a:hover {
   background-color:seagreen;
   color: black;
 }
 
-.dropdown {
-  background-color: teal;
+.dropbtn {
+  background-color: grey;
   color: white;
+  padding: 10px;
+  font-size: 25px;
+  border: none;
+  border-radius: 50px ;
+  height: 50px ;
+  width: 50px;
+  position: absolute;
+  top: -10 px;
+  left: 20px;
+  opacity: 0.4;
+
 }
 
-#dropdown {
+.dropdown {
   position: relative;
   display: inline-block;
 }
@@ -161,10 +173,15 @@ input {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+  font-family:Trebuchet MS, sans-serif;
+  font-weight: bold;
+  top: 55px;
+  left: 10px;
+  background-color: lightgrey;
+  width: 185px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border-radius: 5px;
 }
 
-#dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {display: block;}

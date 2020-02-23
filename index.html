@@ -8,27 +8,36 @@
 <script src="parcoords.js"></script>
 <script src="divgrid.js"></script>
 
+<div class="dropdown">
+  <button class="dropbtn">?</button>
+  <div class="dropdown-content">
+    <a>This page takes you on a journey of how the world's view on what is justifiable and that is not
+      has changed throughout the years. The values shown are an average of the different countries' answers where 1  means 
+      "Can never be justified" and 10 means "Can always be justified". </a>
+  </div>
+</div>
+
 <h2> 
   <span id="normal">What is </span><span id="bold">JUSTIFIABLE</span> <span id="normal">and what isn't?</span>
 </h2>
 <h3> Explore the world's opinions thoughout the years. </h3>
 <div class="topnav">
-  <b href="test.html">Wave 3 1995-1998</b>
-  <b href="index.html">Wave 4 1999-2004</b>
-  <b href="test.html">Wave 5 2005-2009</b>
-  <b href="index.html">Wave 6 2010-2014</b>
-  <b id="dropdown">?</b>
-  <div class="dropdown-content">Bla bla</div>
-</div>
+  <a href="test.html">Wave 3 1995-1998</a>
+  <a href="index.html">Wave 4 1999-2004</a>
+  <a href="test.html">Wave 5 2005-2009</a>
+  <a href="index.html">Wave 6 2010-2014</a>
+  <a href="index.html">Discovery process</a>
 
+</div>
+ 
 <div id="example" class="parcoords"></div>
 <div id="grid"></div>
 
 <script id="brushing">// quantitative colour scale
-var green_to_blue = d3.scale.linear()
-  .domain([9, 50])
-  .range(["#7AC143", "#00B0DD"])
-  .interpolate(d3.interpolateLab);
+  var green_to_blue = d3.scale.linear()
+    .domain([9, 50])
+    .range(["#7AC143", "#00B0DD"])
+    .interpolate(d3.interpolateLab);
 
 var color = function(d) { return green_to_blue(d['Homosexuality']); };
 
